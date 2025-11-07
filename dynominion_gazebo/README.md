@@ -1,6 +1,6 @@
-#dynominion_gazebo
+# dynominion_gazebo
 
-###Overview
+### Overview
 
 The dynominion_gazebo package integrates Gazebo sensor plugins along with the gazebo_ros2_control plugin to create a complete simulation environment for the Dynominion robot.
 
