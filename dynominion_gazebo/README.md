@@ -14,47 +14,45 @@ This package includes two launch files:
     - dyniminion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2.
     - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame.
 
-###Package Structure
+### Package Structure
 
 dynominion_gazebo
-|   CMakeLists.txt
-|   package.xml
-|   
-+---config
-|       diff_drive_controller.yaml
-|       gz_bridge.yaml
-|       
-+---dynominion_gazebo
-|       joint_state_republisher.py
-|       odom_modifier.py
-|       __init__.py
-|       
-+---launch
-|       dynominion_gazebo.launch.py
-|       rviz_model_view.launch.py
-|       
-+---models
-|   +---actor
-|   |           
-|   +---Cafe
-|   |           
-|   +---Cafe_table
-|   |           
-|   \---male_visitor
+│
+├── CMakeLists.txt
+├── package.xml
+│
+├── config
+│   ├── diff_drive_controller.yaml
+│   └── gz_bridge.yaml
+│
+├── dynominion_gazebo
+│   ├── __init__.py
+│   ├── joint_state_republisher.py
+│   └── odom_modifier.py
+│
+├── launch
+│   ├── dynominion_gazebo.launch.py
+│   └── rviz_model_view.launch.py
+│
+├── models
+│   ├── actor
+│   ├── Cafe
+│   ├── Cafe_table
+│   └── male_visitor
+│
+├── rviz
+│   └── view_robot.rviz
+│
+├── urdf
+│   ├── dynominion.urdf.xacro
+│   ├── gazebo_ros2_control.xacro
+│   └── gazebo_sensor_plugin.xacro
+│
+└── worlds
+    └── cafe.world
 
-|               
-+---rviz
-|       view_robot.rviz
-|       
-+---urdf
-|       dynominion.urdf.xacro
-|       gazebo_ros2_control.xacro
-|       gazebo_sensor_plugin.xacro
-|       
-\---worlds
-        cafe.world
         
-###Package Requirements
+### Package Requirements
 
     - gazebo_ros
     - gazebo_ros2_control
@@ -64,7 +62,7 @@ dynominion_gazebo
     - urdf
     - robot_state_publisher
 
-###Launch
+### Launch
 
 `ros2 launch dynominion_gazebo dynominion_gazebo.launch.py`
 
