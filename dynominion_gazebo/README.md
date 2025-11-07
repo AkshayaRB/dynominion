@@ -12,10 +12,9 @@ All 3D models used in the simulation are stored in the **models/** folder, while
 
 This package includes two launch files:
     - dyniminion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2.
-    - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame.
+    - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame
 
----    
-
+--- 
 ### Package Structure
 
 dynominion_gazebo
@@ -24,36 +23,36 @@ dynominion_gazebo
 ├── package.xml
 │
 ├── config
-│   ├── diff_drive_controller.yaml
-│   └── gz_bridge.yaml
+│ ├── diff_drive_controller.yaml
+│ └── gz_bridge.yaml
 │
 ├── dynominion_gazebo
-│   ├── __init__.py
-│   ├── joint_state_republisher.py
-│   └── odom_modifier.py
+│ ├── init.py
+│ ├── joint_state_republisher.py
+│ └── odom_modifier.py
 │
 ├── launch
-│   ├── dynominion_gazebo.launch.py
-│   └── rviz_model_view.launch.py
+│ ├── dynominion_gazebo.launch.py
+│ └── rviz_model_view.launch.py
 │
 ├── models
-│   ├── actor
-│   ├── Cafe
-│   ├── Cafe_table
-│   └── male_visitor
+│ ├── actor
+│ ├── Cafe
+│ ├── Cafe_table
+│ └── male_visitor
 │
 ├── rviz
-│   └── view_robot.rviz
+│ └── view_robot.rviz
 │
 ├── urdf
-│   ├── dynominion.urdf.xacro
-│   ├── gazebo_ros2_control.xacro
-│   └── gazebo_sensor_plugin.xacro
+│ ├── dynominion.urdf.xacro
+│ ├── gazebo_ros2_control.xacro
+│ └── gazebo_sensor_plugin.xacro
 │
 └── worlds
-    └── cafe.world
-
----       
+└── cafe.world
+---        
+        
 ### Package Requirements
 
     - gazebo_ros

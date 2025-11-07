@@ -12,8 +12,8 @@ The launch folder includes three main launch files:
 	- online_async_launch.py – Performs live mapping asynchronously. The map is updated after loop closures or periodic optimizations.
     - online_sync_launch.py – Performs live mapping synchronously, updating the map with each incoming sensor measurement.
     - offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
-
-###Package Structure
+---
+### Package Structure
 
 dynominion_slam
 |   CMakeLists.txt
@@ -32,8 +32,9 @@ dynominion_slam
 |       
 \---rviz
         mapping.rviz
+---
 
-###Package Requirements 
+### Package Requirements 
 
     - slam_toolbox
     - laser_filters
@@ -41,7 +42,7 @@ dynominion_slam
 Additional requirement:
     - rosbag2 (for offline mapping)
 
-###Launch
+### Launch
 
    `ros2 launch dynominion_slam online_async_launch.py` 
    `ros2 launch dynominion_slam online_sync_launch.py`  
